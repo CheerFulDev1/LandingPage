@@ -1,0 +1,46 @@
+.header{
+    
+    
+    nav{
+        padding: 24px;
+    }
+    
+    &__logo{
+        img{
+            width: 8.81rem;
+            height: 1.375;
+        }
+    }
+
+    &__menu{ //mobile menu
+        > span{
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $darkBlue;
+            border-radius: 5px;
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    &__links{
+        a{
+            font-size: $font-sm;
+            transition: color 300ms ease-in-out;
+            transition: border 300ms ease-in-out;
+
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+
+            &:hover{
+                font-weight: bold;
+                padding-bottom: 16px;
+                border-bottom: 5px solid $darkBlue;
+                color: $darkBlue;
+            }
+        }
+    }
+}
