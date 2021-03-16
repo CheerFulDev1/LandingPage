@@ -76,8 +76,7 @@
     &__links{
         a{
             font-size: $font-sm;
-            transition: color 200ms ease-in-out;
-            transition: border 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
 
             &:not(:last-child){
                 margin-right: 32px;
@@ -86,7 +85,7 @@
             &:hover{
                 font-weight: bold;
                 padding-bottom: 16px;
-                border-bottom: 5px solid $darkBlue;
+                border-bottom: 5px solid $limeGreen;
                 color: $darkBlue;
             }
         }
