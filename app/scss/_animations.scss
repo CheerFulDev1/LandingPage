@@ -17,6 +17,7 @@
 }
 
 .fade-in{
+    z-index: 1;
     animation: fade-in 300ms ease-in-out forwards;
 }
 

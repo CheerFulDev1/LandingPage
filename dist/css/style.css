@@ -31,6 +31,7 @@
 }
 
 .fade-in {
+  z-index: 1;
   -webkit-animation: fade-in 300ms ease-in-out forwards;
           animation: fade-in 300ms ease-in-out forwards;
 }
@@ -266,6 +267,7 @@ button:hover, .button:hover {
   background-color: white;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
+  z-index: 1;
 }
 
 .header__logo img {
@@ -292,10 +294,9 @@ button:hover, .button:hover {
 .header__menu {
   background: white;
   padding: 1.625rem;
-  margin-top: 1.5rem;
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
   position: absolute;
-  width: calc(100% - 3rem);
+  width: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -306,6 +307,12 @@ button:hover, .button:hover {
   padding: 0.625rem;
   display: block;
   text-align: center;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+.header__menu a:hover {
+  color: #31d35c;
 }
 
 .header__links a {
